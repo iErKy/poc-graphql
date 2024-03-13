@@ -1,2 +1,12 @@
-<poc-graphql-nx-welcome></poc-graphql-nx-welcome>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">GraphQL PoC
+</mat-toolbar>
+
+<ng-container>
+  <app-navigation-bar (selectionChanged)="manageNavigation($event)"
+                      [$sections]="sections"/>
+  @switch ($selectedIndex()) {
+    @case ($selectedIndex() === 1) {
+      <albums-list/>
+    }
+  }
+</ng-container>

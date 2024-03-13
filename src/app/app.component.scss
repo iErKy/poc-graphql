@@ -1,0 +1,22 @@
+form {
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+mat-toolbar {
+  margin-bottom: 20px;
+}
+
+.rotate {
+  animation: spinAround 2s linear infinite;
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

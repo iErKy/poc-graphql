@@ -24,7 +24,6 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "pocGraphql",
             "style": "camelCase"
           }
         ],
@@ -32,7 +31,6 @@
           "error",
           {
             "type": "element",
-            "prefix": "poc-graphql",
             "style": "kebab-case"
           }
         ]
